@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlatformNest - Coming Soon</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary: #00aeef;
+        --dark: #2e3a59;
+        --white: #ffffff;
+        --gray: #64748b;
+        --bg-light: #e6f0ff;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+        font-family: "Inter", sans-serif;
+        background: linear-gradient(to bottom right, #f2f7fc, var(--bg-light));
+        color: var(--dark);
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .coming-soon-banner {
+        width: 100%;
+        padding: 1.3rem 1rem;
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: 700;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        color: var(--white);
+        background: linear-gradient(90deg, #00aeef, #0077cc);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 10;
+      }
+
+      .hero {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 3rem 2rem;
+      }
+
+      .logo {
+        width: 300px;
+        max-width: 90vw;
+        margin-bottom: 2rem;
+        animation: float 4s ease-in-out infinite;
+        transition: transform 0.5s ease, box-shadow 0.4s ease;
+        filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+      }
+
+      .logo:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 24px rgba(0, 174, 239, 0.3);
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-8px);
+        }
+      }
+
+      h1 {
+        font-size: 4rem;
+        font-weight: 800;
+        margin-bottom: 0.8rem;
+        letter-spacing: -1px;
+      }
+
+      .tagline {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--primary);
+        margin-bottom: 1rem;
+        letter-spacing: 0.3px;
+      }
+
+      .footer {
+        text-align: center;
+        font-size: 0.9rem;
+        color: var(--gray);
+        padding: 1rem;
+        background-color: #f9fafb;
+      }
+
+      /* Responsive */
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 2.5rem;
+        }
+        .logo {
+          width: 200px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="coming-soon-banner">🚀 Launching Soon! ...</div>
+
+    <div class="hero">
+      <img src="logo.png" alt="PlatformNest Logo" class="logo" />
+      <h1>
+        <span style="color: #00aeef">Platform</span
+        ><span style="color: #2e3a59">Nest</span>
+      </h1>
+      <p class="tagline"style="color: #1f3b63;"></p>
+        Engineering Resilient Platforms for the Cloud-Native Era
+      </p>
+    </div>
+
+    <div class="footer">&copy; 2025 PlatformNest. All rights reserved.</div>
+  </body>
+</html>
